@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>단어집 3</title>
+    <title>단어집 1</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Segoe UI", Arial, sans-serif;
         margin: 0;
         padding: 20px;
-        background-color: #f4f4f4;
+        background-color: #f5f5f5;
         text-align: center;
       }
       h1 {
         color: #333;
+        font-size: 32px;
+        margin-bottom: 20px;
       }
       .comic-image {
         max-width: 100%;
@@ -25,18 +27,60 @@
       .word-list {
         list-style: none;
         padding: 0;
+        max-width: 600px;
+        margin: 0 auto 40px auto;
       }
       .word-list li {
         margin: 10px 0;
         font-size: 18px;
+        text-align: left;
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
-      .word-list span {
+      .word-list .word {
+        font-weight: bold;
+        color: #333;
+      }
+      .word-list .meaning {
         color: #555;
         margin-left: 10px;
       }
+      .comic-section {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .comic-section h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .comic-list {
+        list-style: none;
+        padding: 0;
+      }
+      .comic-list li {
+        background-color: #ffffff;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-size: 16px;
+        color: #666;
+        line-height: 1.5;
+      }
+      .comic-list .cut {
+        font-weight: bold;
+        color: #333;
+        display: block;
+        margin-bottom: 5px;
+      }
       .back-button {
         display: inline-block;
-        margin-top: 20px;
+        margin-top: 30px;
         padding: 10px 20px;
         font-size: 16px;
         color: white;
@@ -44,6 +88,7 @@
         border: none;
         border-radius: 5px;
         text-decoration: none;
+        transition: background-color 0.3s ease;
       }
       .back-button:hover {
         background-color: #5a6268;
